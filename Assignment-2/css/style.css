@@ -1,0 +1,88 @@
+body{
+  background-color:  #F2E5EF;
+  font-family: 'Rubik', Dancing_Script;
+  font-size: 20px;
+  margin:5% auto;
+  width: 80%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Dancing_Script';
+}
+h1{
+  color:darkpurple;
+  padding-left:30%;
+}
+h2,h3,h4,h5,h6{
+  color: #581845;
+}
+
+  /* {font-size: 25px;
+} */
+h3{
+  font-size: 20px;
+}
+
+a:link{
+  color:darkpurple;
+  text-decoration: none;
+}
+/* added hover styles to the links */
+a:hover{
+  color:darkpurple;
+  text-decoration: underline;
+}
+
+hr{
+  border:solid 1px #9F245E;
+  margin-left:30%;
+}
+.contact img{
+  margin: 0 0 15px 0;
+  transform: rotate(90deg);
+}
+
+.contact, .main-content{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contact{
+  width: 25%;
+}
+
+.main-content{
+  padding:0 5%;
+  width: 64%;
+}
+
+.about h2{
+  margin-top:0;
+}
+table{
+  margin-bottom: 30px;
+}
+tr{
+  background-color:  #AB8CA6;
+  background-color:  #F9C0D5;
+
+  border-bottom: solid 1px #9F245E;
+}
+  td{
+  border: solid 1px #EED7DF;
+  padding:10px;
+}
+
+td.dates{
+  background-color: darkpurple;
+  color:#9F245E;
+  font-family: 'Dancing_Script', Rubik;
+  font-weight: 800;
+}
+footer{
+  margin-left:30%;
+}
+.education{
+  color:red;
+  
+}
