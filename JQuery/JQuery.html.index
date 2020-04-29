@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {background-color: darkseagreen;}
+  h1   {color: sienna;}
+  p    {color: black;}
+  </style>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='sticky.js'></script>
+  <link href='sticky.css' rel='stylesheet' type='text/css'>
+    <title>JQuery CSS stylesheet</title>
+
+  <style>
+    #myHeader {
+  background-color: Green;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+  /* Style all elements with the class name "city" */
+  .Information {
+    background-color: saddlebrown;
+    color: white;
+    padding: 5px;
+  }
+    #myfooter {
+background-color: Green;
+color: black;
+padding: 40px;
+text-align: left;
+  </style>
+</head>
+<body>
+    <h1 id="myHeader">Chocolate-Mint Chocolate Cookies</h1>
+  <p>Melted créme de menthe candies placed on top of small chocolate cookies.
+  A delight for those who love mint and chocolate and perfect for gatherings!</p>
+  <!-- Multiple similar elements -->
+    <h2 class="Information">Servings</h2>
+  <p>Makes 2 - 1/2 Dozen (depending on size of dough).</p>
+    <h3 class="Information">Bake time</h3>
+  <p>8-10 minuites.</p>
+    <h3 class="Information">Temperature</h3>
+  <p>350°F</p>
+    <h3 class="Information">Ingredients</h3>
+<!-- Site navigation menu -->
+<ul class="navbar">
+  <li>Semisweet chocolate chips: 1 cup (6 oz.)</li>
+  <li>Butter: 6 tablespoons</li>
+  <li>Light brown sugar: 3/4 cup</li>
+  <li>Water: 1 tablespoon</li>
+  <li>Egg(s): 1, large</li>
+  <li>All-purpose Flour: 1-1/4 cup</li>
+  <li>Salt: 1/2 teaspoon</li>
+  <li>Baking Soda: 1/2 teaspoon</li>
+  <li>Créme de menthe chocolate candies: 1 (4.67 oz.) package</li>
+</ul>
+
+<!-- Main content -->
+<div class='content'>
+  <h2 class="Information">Directions</h2>
+    <p>In a small saucepan over medium heat, melt chocolatre chips and butter.
+    In a large bowl with an electric mixer on medium-low speed, combine the
+    melted chocolate mixture, brown sugar, and water; let cool slightly. Slowly
+    beat in an egg. Gradually add flour, salt, and baking soda untill well combined.
+    Cover and put the mixture into the refrigorator. Let the mixture chill for 1 hour.</p>
+
+    <p>Pre-heat oven to 350 degrees F. Shape dough into 1-inch balls and place 2 inches
+      apart on greased cookie sheets.</p>
+
+    <p>Bake 10-8 minuites or untill the edges are set and the middles are soft and slightly
+       puffy. Remove from oven and palce on a cooling rack.</p>
+
+    <p>Cut 15 candies in half and place them a half on top of each warm cookie; let sit for
+      1 minute. Gently spread warmed chocolate over tops of cookies and let cool slightly.
+      Chop remaining candies and sprinkle on top of cookies, as shown in the photo.</p>
+</div>
+</body>
+<!-- Sign and date the page, it's only polite! -->
+    <h4 id="myfooter"><address>Made 17 April 2020<br>
+      by Kaityn Tucker.</address></h4>
