@@ -1,6 +1,6 @@
 body{
-  background-color:  #F2E5EF;
-  font-family: 'Rubik', Dancing_Script;
+  background-color:  #FDDFDC;
+  font-family: 'Rubik', 'Dancing_Script';
   font-size: 20px;
   margin:5% auto;
   width: 80%;
@@ -11,16 +11,16 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
   color:darkpurple;
-  padding-left:30%;
+  padding-left:20%;
 }
 h2,h3,h4,h5,h6{
-  color: #581845;
+  color: #2F142A
 }
 
   /* {font-size: 25px;
 } */
 h3{
-  font-size: 20px;
+  font-size: 25px;
 }
 
 a:link{
@@ -34,7 +34,7 @@ a:hover{
 }
 
 hr{
-  border:solid 1px #9F245E;
+  border:solid 1px ##2F142A;
   margin-left:30%;
 }
 .contact img{
@@ -76,7 +76,7 @@ tr{
 td.dates{
   background-color: darkpurple;
   color:#9F245E;
-  font-family: 'Dancing_Script', Rubik;
+  font-family: 'Dancing_Script', 'Rubik';
   font-weight: 800;
 }
 footer{
@@ -84,5 +84,5 @@ footer{
 }
 .education{
   color:red;
-  
+
 }
