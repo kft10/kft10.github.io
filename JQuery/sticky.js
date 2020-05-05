@@ -1,4 +1,3 @@
-DOCTYPE
 var yourNavigation = $(".nav");
 stickyDiv = "sticky";
 yourHeader = $(".header").height();
