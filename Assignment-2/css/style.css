@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Dancing_Script';
 }
 h1{
-  color:darkpurple;
+  color:purple;
   padding-left:20%;
 }
 h2,h3,h4,h5,h6{
@@ -24,12 +24,15 @@ h3{
 }
 
 a:link{
-  color:darkpurple;
+  color:purple;
   text-decoration: none;
 }
+  color:purple;
+  text-decoration: none;
+
 /* added hover styles to the links */
 a:hover{
-  color:darkpurple;
+  color:purple;
   text-decoration: underline;
 }
 
@@ -74,7 +77,7 @@ tr{
 }
 
 td.dates{
-  background-color: darkpurple;
+  background-color: purple;
   color:#9F245E;
   font-family: 'Dancing_Script', 'Rubik';
   font-weight: 800;
