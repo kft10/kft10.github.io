@@ -6,11 +6,13 @@
   h1   {color: sienna;}
   p    {color: black;}
   </style>
-
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  <script src='sticky.js'></script>
-  <link href='sticky.css' rel='stylesheet' type='text/css'>
     <title>JQuery CSS stylesheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Crepe Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+    <script src='sticky.js'></script>
+    <link href='sticky.css' rel='stylesheet' type='text/css'>
 
   <style>
     #myHeader {
@@ -33,50 +35,137 @@ text-align: left;
   </style>
 </head>
 <body>
+  <main>
+    <header>
+  <h1>Easy <span>5</span> minute <br>Chocolate-Mint Chocolate Cookies</h1>
+  </header>
+  <div class="servings clear">
+    <p>For 7-8</p>
+  </div>
+  <section class="intro" style="display: none;">
+    <p>Melted creme de menthe candies placed on top of small chocolate cookies.
+    A delight for those who love mint and chocolate and perfect for gatherings! </p>
+    <p> This recipe makes 2 - 1/2 Dozen (depending on size of dough).</p>
+    <p>The bake time is 8-10 minuites at 350°F.</p>
+    <p>No experience necessary.</p>
+  <button class="step1" type="button" name="start">Start</button>
+  </section>
+  <section class="ingredients hide" style="display: none;">
+    <h2>Ingredients</h2>
+    <img src="images/ingredients.png" alt="crepe ingredients" style="display: none;">
+    <ul>
+      <li>Semisweet chocolate chips: 1 cup (6 oz.)</li>
+      <li>Butter: 6 tablespoons</li>
+      <li>Light brown sugar: 3/4 cup</li>
+      <li>Water: 1 tablespoon</li>
+      <li>Egg(s): 1, large</li>
+      <li>All-purpose Flour: 1-1/4 cup</li>
+      <li>Salt: 1/2 teaspoon</li>
+      <li>Baking Soda: 1/2 teaspoon</li>
+      <li>Créme de menthe chocolate candies: 1 (4.67 oz.) package</li>
+    </ul>
     <h1 id="myHeader">Chocolate-Mint Chocolate Cookies</h1>
   <p>Melted creme de menthe candies placed on top of small chocolate cookies.
   A delight for those who love mint and chocolate and perfect for gatherings!</p>
-  <!-- Multiple similar elements -->
-    <h2 class="Information">Servings</h2>
-  <p>Makes 2 - 1/2 Dozen (depending on size of dough).</p>
-    <h3 class="Information">Bake time</h3>
-  <p>8-10 minuites.</p>
-    <h3 class="Information">Temperature</h3>
-  <p>350°F</p>
-    <h3 class="Information">Ingredients</h3>
-<!-- Site navigation menu -->
-<ul class="navbar">
-  <li>Semisweet chocolate chips: 1 cup (6 oz.)</li>
-  <li>Butter: 6 tablespoons</li>
-  <li>Light brown sugar: 3/4 cup</li>
-  <li>Water: 1 tablespoon</li>
-  <li>Egg(s): 1, large</li>
-  <li>All-purpose Flour: 1-1/4 cup</li>
-  <li>Salt: 1/2 teaspoon</li>
-  <li>Baking Soda: 1/2 teaspoon</li>
-  <li>Créme de menthe chocolate candies: 1 (4.67 oz.) package</li>
-</ul>
+  <p class="ing">See Ingredients</p>
+  <button class="step2" type="button" name="next">Next</button>
+  </section>
+  <section class="mix hide" style="display: none;">
+  <h2>Mix</h2>
+  <p>(all the ingredients)</p>
+  <img src="images/mix.png" alt="cookie ingredients">
+  <button class="back2" type="button" name="next">Back</button>
+  <button class="step3" type="button" name="next">Next</button>
+  </section>
+  <section class="cook hide" style="display: none;">
+  <h2>Cook</h2>
+  <p>(about a minute)</p>
+  <img src="images/cook.png" alt="cookie ingredients"> <br>
+  <button class="step4" type="button" name="next">Next</button>
+  </section>
+  <section class="serve hide" style="display: block;">
+  <h2>Serve</h2>
+  <p>(combine with chocolate, strawberries or bananas)</p>
+  <img src="images/serve.png" alt="crepe ingredients">
 
-<!-- Main content -->
-<div class='content'>
-  <h2 class="Information">Directions</h2>
-    <p>In a small saucepan over medium heat, melt chocolatre chips and butter.
-    In a large bowl with an electric mixer on medium-low speed, combine the
-    melted chocolate mixture, brown sugar, and water; let cool slightly. Slowly
-    beat in an egg. Gradually add flour, salt, and baking soda untill well combined.
-    Cover and put the mixture into the refrigorator. Let the mixture chill for 1 hour.</p>
+  <p class="final">Enjoy!</p></section>
 
-    <p>Pre-heat oven to 350 degrees F. Shape dough into 1-inch balls and place 2 inches
-      apart on greased cookie sheets.</p>
+  <cite><a href="https://www.freepik.com/free-photos-vectors/food">Food photo created by freepik</a> <a href="https://www.freepik.com/free-photos-vectors/food">Food vector created by freepik</a></cite>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/nav1.js"></script> -->
+  <script type="text/javascript">
+  $(document).ready(function(){
+  // Step One
+  $(".step1").click(function(){
+    $(".intro").hide(1000);
+    $(".ingredients").show(1000);
+    $
+  });
+  // Step Two
+  $(".step2").click(function(){
+    $(".ingredients").slideUp();
+    $(".mix").slideDown();
 
-    <p>Bake 10-8 minuites or untill the edges are set and the middles are soft and slightly
-       puffy. Remove from oven and palce on a cooling rack.</p>
+    $(document).on("click", ".back2", function(){
+      $(".ingredients").slideDown();
+      // $(".mix").slideUp();
+      $(".ingredients").after("<section class=\"mix hide\"><h2>Mix Appended</h2><p>(all the ingredients)</p>" + "<img src=\"images/mix.png\" alt=\"crepe ingredients\">" + "<button class=\"back2\" type=\"button\" name=\"next\">Back</button>"
+      + "<button class=\"step3\" type=\"button\" name=\"next\">Next</button></section>");
 
-    <p>Cut 15 candies in half and place them a half on top of each warm cookie; let sit for
-      1 minute. Gently spread warmed chocolate over tops of cookies and let cool slightly.
-      Chop remaining candies and sprinkle on top of cookies, as shown in the photo.</p>
-</div>
-</body>
-<!-- Sign and date the page, it's only polite! -->
-    <h4 id="myfooter"><address>Made 17 April 2020<br>
-      by Kaityn Tucker.</h4></address>
+
+    });
+    $(".step2").click(function(){
+      $(".mix").removeClass(".hide").slideDown();
+    });
+  });
+    $("p.ing").on({
+      mouseenter: function(){
+        $(".ingredients img").fadeIn(1000);
+      },
+        mouseleave: function(){
+          $(".ingredients img").fadeOut(1000);
+        }
+    });
+    // Step three
+    $(".step3").click(function(){
+      $(".mix").slideUp();
+      $(".cook").css("display", "block");
+    });
+    // Back to two
+    $(".back2").click(function(){
+      $(".mix").remove();
+      $(".ingredients").slideDown();
+    });
+    // Step four
+    $(".step4").click(function(){
+      $(".cook").slideUp("slow");
+      $(".serve").show();
+      $(".serve").append("<p class='final'>Enjoy!</p>");
+
+    });
+
+
+  });
+  </script>
+
+
+
+  </body></html>
+<h
+
+  <p>In a small saucepan over medium heat, melt chocolatre chips and butter.
+  In a large bowl with an electric mixer on medium-low speed, combine the
+  melted chocolate mixture, brown sugar, and water; let cool slightly. Slowly
+  beat in an egg. Gradually add flour, salt, and baking soda untill well combined.
+  Cover and put the mixture into the refrigorator. Let the mixture chill for 1 hour.</p>
+
+      <p>Pre-heat oven to 350 degrees F. Shape dough into 1-inch balls and place 2 inches
+        apart on greased cookie sheets.</p>
+
+      <p>Bake 10-8 minuites or untill the edges are set and the middles are soft and slightly
+         puffy. Remove from oven and palce on a cooling rack.</p>
+
+      <p>Cut 15 candies in half and place them a half on top of each warm cookie; let sit for
+        1 minute. Gently spread warmed chocolate over tops of cookies and let cool slightly.
+        Chop remaining candies and sprinkle on top of cookies, as shown in the photo.</p>
